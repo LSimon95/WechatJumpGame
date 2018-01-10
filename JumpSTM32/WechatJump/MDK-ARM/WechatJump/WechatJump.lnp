@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"wechatjump\main.o"
+"wechatjump\stm32f1xx_hal_msp.o"
+"wechatjump\stm32f1xx_it.o"
+"wechatjump\stm32f1xx_hal_cortex.o"
+"wechatjump\stm32f1xx_hal_flash_ex.o"
+"wechatjump\stm32f1xx_hal.o"
+"wechatjump\stm32f1xx_hal_gpio_ex.o"
+"wechatjump\stm32f1xx_hal_gpio.o"
+"wechatjump\stm32f1xx_hal_pwr.o"
+"wechatjump\stm32f1xx_hal_tim.o"
+"wechatjump\stm32f1xx_hal_flash.o"
+"wechatjump\stm32f1xx_hal_uart.o"
+"wechatjump\stm32f1xx_hal_rcc.o"
+"wechatjump\stm32f1xx_hal_dma.o"
+"wechatjump\stm32f1xx_hal_tim_ex.o"
+"wechatjump\stm32f1xx_hal_rcc_ex.o"
+"wechatjump\startup_stm32f103xb.o"
+"wechatjump\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "WechatJump\WechatJump.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WechatJump.map" -o WechatJump\WechatJump.axf
